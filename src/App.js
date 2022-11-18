@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoApp from './components/TodoList';
+
+//CHALLENGE: Make this app work by applying what you've learnt.
+//1. When new text is written into the input, its state should be saved.
+//2. When the add button is pressed, the current data in the input should be
+//added to an array.
+//3. The <ul> should display all the array items as <li>s
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <TodoApp />
     </div>
   );
 }
